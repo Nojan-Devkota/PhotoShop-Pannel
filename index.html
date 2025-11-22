@@ -206,6 +206,16 @@
   </div>
   </div>
 
+
+  <div id="jail-overlay"
+    style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.95); z-index:9999; display:flex; justify-content:center; align-items:center; flex-direction:column;">
+    <h2 style="color:white;">Activation Required</h2>
+    <input type="text" id="key-input" placeholder="XXXX-XXXX"
+      style="padding:10px; margin:10px; width:70%; text-align:center; color:black;">
+    <button onclick="unlockApp()" style="padding:10px 20px; cursor:pointer; color:black;">Unlock Panel</button>
+    <p id="jail-msg" style="color:red; margin-top:10px;"></p>
+  </div>
+
   <script>
     window.addEventListener('load', (event) => {
       openCity(event, 'Effects'),

@@ -1,0 +1,216 @@
+<!doctype html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="./ext.js"></script>
+  <script src="./lib/CSInterface-4.0.0.js"></script>
+  <link id="ppstyle" rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Eyemazy</title>
+</head>
+
+
+<body id="body" style="background-color: #505050;">
+  <div id="content">
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'Effects')">Customize</button>
+      <button class="tablinks" onclick="openCity(event, 'File')">Export</button>
+      <button class="tablinks" onclick="openCity(event, 'Print')" style="display:none">Print</button>
+      <button class="tablinks" onclick="openCity(event, 'Specials')">Pano</button>
+    </div>
+    <div id="Effects" class="tabcontent">
+      <div class="banner_text mb-3 effect_banner">
+        <h5>Effects</h5>
+      </div>
+      <div class="container-fluid">
+        <div class="button_container">
+          <div><button id="b1" class="bigb" onclick="explosion()"></button></div>
+          <div> <button id="b2" class="bigb" onclick="bubbles()"></button></div>
+          <div> <button id="b3" class="bigb" onclick="galaxy()"></button></div>
+        </div>
+        <div class="button_container">
+          
+          <div> <button id="b4" class="bigb d-none" onclick="fiffif()"></button></div>
+          <div> <button id="b3a" class="bigb" onclick="dust()"></button></div>
+          <div> <button id="b4a" class="bigb d-none" onclick="flower()"></button></div>
+        </div>
+      </div>
+      <div class="banner_text mt-3 mb-3 effect_banner">
+        <h5></h5>
+      </div>
+      <div class="container-fluid">
+        <div class="button_container">
+          <div><button id="nature" class="bigb" onclick="forest()"></button></div>
+          <div><button id="ocean" class="bigb" onclick="ocean()"></button></div>
+          <div ><button id="rock" class="bigb" onclick="Rock()"></button></div>
+        </div>
+      </div>
+      <div class="banner_text mt-3 mb-3 effect_banner">
+        <h5>Layouts & Text</h5>
+      </div>
+      <div class="container-fluid">
+        <div class="button_container">
+          <div><button id="twoplusonone" class="bigb" onclick="twoplusonone()"></button></div>
+          <div><button id="layoutchange" class="bigb" onclick="layoutchange()"></button></div>
+          <div ><button id="addtext" class="bigb" onclick="addtext()"></button></div>
+        </div>
+      </div>
+      <div class="banner_text mt-3 mb-3 effect_banner">
+        <h5>Reset & Restore</h5>
+      </div>
+      <div class="container-fluid">
+        <div class="button_container">
+          <div><button id="restore_new" class="bigb" onclick="Restore()"></button></div>
+          <div><button id="split_image" class="bigb" onclick="split_image()"></button></div>
+          <div><button id="Reset_layout" class="bigb" onclick="Reset_layout()"></button></div>
+        </div>
+        <div class="button_container">
+          <div><button id="Repair_Image" class="bigb" onclick="Repair_Image()"></button></div>
+        </div>
+      </div>
+       </div>
+    <div id="File" class="tabcontent">
+      <div class="banner_text mb-3 export_banner">
+        <h5>Files</h5>
+      </div>
+      <div class="container-fluid">
+        <div class="button_container">
+          <div><button id="Web_File" class="bigb" onclick="Web_File()"></button></div>
+          <div><button id="Print_File" class="bigb" onclick="Print_File()"></button></div>
+          <div><button id="Pro_File" class="bigb" onclick="Pro_File()"></button></div>
+        </div>
+      </div>
+      <div class="banner_text mt-3 mb-3 export_banner">
+        <h5>Premium Print</h5>
+      </div>
+      <div class="container-fluid">
+        <div class="col-md-12 export_sub">
+          <p class="inner_content">Change Aspect Ratio</p>
+        </div>
+        <div class="button_container pl-3 pr-3">
+          
+          <div><button id="b3b11" onclick="pp32()"></button></div>
+          <div><button id="b3b33" onclick="pp43()"></button></div>
+          <div><button id="b3b44" onclick="a45()"></button></div>
+        </div>  
+        <div class="button_container pl-3 pr-3">
+          <div><button id="b3b22" onclick="pp11()"></button></div>
+          <div><button id="bround" class="bigb1" onclick="Round()"></button></div>
+        </div>  
+        <div class="col-md-12 export_sub mt-2">
+          <p class="inner_content">Apply Canvas</p>
+        </div>
+        <div class="button_container pl-3 pr-3">
+          <div><button id="b19" class="bigb1" onclick="cs11()"></button></div>
+          <div><button id="b15" class="bigb1" onclick="cs32()"></button></div>
+          <div><button id="b16" class="bigb1" onclick="cs43()"></button></div>
+          <div><button id="b20" class="bigb1" onclick="cs12()"></button></div>
+        </div>
+        <div class="col-md-12 export_sub mt-2">
+          <p class="inner_content">Export</p>
+        </div>
+        <div class="button_container">
+          <div><button id="b113" class="bigb" onclick="customerpreview()"></button></div>
+          <div><button id="watermarked" class="bigb" onclick="Watermark()"></button></div>
+          <div><button id="b114" class="bigb" onclick="hq(),phqllog()"></button></div>          
+        </div>
+        <div class="button_container mt-2">
+          <div><button id="jewelry" class="bigb" onclick="Jewelry()"></button></div>
+        </div>
+        <div class="banner_text mt-3 mb-3 export_banner">
+          <h5>Label Print</h5>
+        </div>
+        <div class="button_container">
+          <div><button id="imge_numbr" class="bigb" onclick="label()"></button></div>
+          <div><button id="label_sumary" class="bigb" onclick="label_summary()"></button></div>
+        </div>
+      </div>
+    </div>
+    <div id="Print" class="tabcontent">
+      <img class="default" id="banner1" src="./image/banner/Direct-Sizes-Kopie.png">
+      <button id="b11" class="bigb" onclick="printsmall(),psmllog()"></button>
+      <button id="b12" class="bigb" onclick="printlarge(),plgllog()"></button>
+      <img class="default" id="banner3" src="./image/banner/Premium-Prints-Kopie.png">
+      <img class="default" id="subbanner1" src="./image/banner/carb.png">
+  
+      <button id="b3b1" onclick="pp32()"></button>
+      <button id="b3b2" onclick="pp11()"></button>
+      <button id="b3b3" onclick="pp43()"></button>
+      <button id="b3b4" onclick="a45()"></button>
+      <img class="default" id="subbanner2" src="./image/banner/exportb.png">
+      <button id="b13" class="bigb" onclick="customerpreview()"></button>
+      <button id="b14" class="bigb" onclick="hq(),phqllog()"></button>
+    </div>
+  
+    <div id="Specials" class="tabcontent">
+      <div class="banner_text specials_banner">
+        <h5>Panorama</h5>
+      </div>
+      <!--       <div class="container-fluid">
+          <div class="button_container"></div>
+        </div> -->
+      <div class="container-fluid">
+        <div class="col-md-12 specials_sub mt-3">
+          <p class="inner_content">Create</p>
+        </div>
+        <div class="button_container">
+          <div><button id="b21" class="bigb" onclick="p1()"></button></div>
+          <div><button id="b22" class="bigb" onclick="p2()"></button></div>
+          <div><button id="pencil" class="bigb" onclick="pt()"></button></div>
+        </div>
+        <div class="col-md-12 specials_sub mt-3">
+          <p class="inner_content">Panorama Effect</p>
+        </div>
+        <div class="button_container">
+          <div><button id="b1" class="bigb" onclick="explosion()"></button></div>
+          <div> <button id="b2" class="bigb" onclick="bubbles()"></button></div>
+          <div> <button id="b3" class="bigb" onclick="galaxy()"></button></div>    
+        </div>
+        <div class="button_container">
+          <div><button id="b22a" class="bigb" onclick="dust()"></button></div>
+        </div>
+        <div class="col-md-12 specials_sub mt-3">
+          <p class="inner_content">Export</p>
+        </div>
+        <div class="button_container">
+          <div><button id="b22aa" class="bigb" onclick="customerpreview()"></button></div>
+          <div><button id="b223" class="bigb" onclick="Watermark()"></button></div>
+          <div><button id="xxl_print" class="bigb" onclick="hqprintpano()"></button></div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+
+
+
+
+  <div style="display: none;">
+    <img class="default" id="banner5" src="./image/banner/Panorama-Sizes-Kopie.png">
+    <button id="b24" onclick="p60()"></button>
+    <button id="b25" onclick="p80()"></button>
+    <button id="b26" onclick="p100()"></button>
+    <button id="b27" onclick="p120()"></button>
+    <button id="b28" onclick="p140()"></button>
+    <button id="b29" onclick="p160()"></button>
+  </div>
+
+  </div>
+  </div>
+</div>
+
+  <script>
+    window.addEventListener('load', (event) => {
+      openCity(event, 'Effects'),
+        onLoaded()
+    });
+  </script>
+</body>
+
+</html>

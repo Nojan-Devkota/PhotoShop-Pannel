@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="4.0" ExtensionBundleId="com.nojan.panel" ExtensionBundleVersion="1.0.0" ExtensionBundleName="Nojan Panel">
+    <Author><![CDATA[ Nojan Devkota ]]></Author>
+    <Contact mailto="your_email@example.com"/>
+    <Legal href="http://yourwebsite.com"/>
+    <Abstract href="http://yourwebsite.com"/>
+    <ExtensionList>
+        <Extension Id="com.nojan.panel" Version="1.0.0"/>
+    </ExtensionList>
+    <ExecutionEnvironment>
+        <HostList>
+            <Host Name="PHSP" Version="[14.0,99.9]"/>
+            <Host Name="PHXS" Version="[14.0,99.9]"/>
+        </HostList>
+        <LocaleList>
+            <Locale Code="All"/>
+        </LocaleList>
+        <RequiredRuntimeList>
+            <RequiredRuntime Name="CSXS" Version="4.0"/>
+        </RequiredRuntimeList>
+    </ExecutionEnvironment>
+    <ExtensionConfig>
+        <Permissions>
+            <LocalStorage><Access>read</Access><Access>write</Access></LocalStorage>
+            <File><Access>read</Access><Access>write</Access></File>
+        </Permissions>
+    </ExtensionConfig>
+    <DispatchInfoList>
+        <Extension Id="com.nojan.panel">
+            <DispatchInfo>
+                <Resources>
+                    <MainPath>./index.html</MainPath>
+                    <ScriptPath>./Eyemazy.jsx</ScriptPath>
+                </Resources>
+                <Lifecycle>
+                    <AutoVisible>true</AutoVisible>
+                </Lifecycle>
+                <UI>
+                    <Type>Panel</Type>
+                    <Menu>Nojan Panel</Menu>
+                    <Geometry>
+                        <Size>
+                            <Height>750</Height>
+                            <Width>300</Width>
+                        </Size>
+                    </Geometry>
+                    <Icons>
+                        <Icon Type="Normal">./image/icon.png</Icon>
+                        <Icon Type="RollOver">./image/icon.png</Icon>
+                        <Icon Type="Disabled">./image/icon.png</Icon>
+                        <Icon Type="DarkNormal">./image/icon.png</Icon>
+                        <Icon Type="DarkRollOver">./image/icon.png</Icon>
+                    </Icons>
+                </UI>
+            </DispatchInfo>
+        </Extension>
+    </DispatchInfoList>
+</ExtensionManifest>

@@ -1,0 +1,1382 @@
+body {
+	font-family: Arial;
+}
+
+/* Style the tab */
+.tab {
+	overflow: hidden;
+	background-color: #414141;
+}
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+}
+
+.docnm {
+	position: absolute;
+	width: auto;
+	left: 15px;
+	bottom: -122px;
+	right: 15px;
+	margin: auto;
+	height: 53px;
+	background-color: #414141;
+}
+
+.docnmi {
+	position: absolute;
+	height: 30px;
+	width: auto;
+	top: 8px;
+	left: 15px;
+	right: 15px;
+	margin: auto;
+	text-align: center;
+	color: white;
+
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+	position: relative;
+	width: 65px;
+	height: 38px;
+	font-size: 13px;
+	border-radius: 0px 0px 0px 0px;
+	background: #414141;
+	border: 0px solid;
+	font-weight: bold;
+	color: #929292;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+	background-color: #000000;
+	color: white;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+	background-color: #535353;
+	color: #eaeaea;
+}
+
+/* Style the tab content */
+.tabcontent {
+	display: none;
+	/* background: #535353; */
+}
+
+#banner1 {
+	position: absolute;
+	top: 705px;
+	width: 95%;
+	height: 30px;
+
+}
+
+#banner12 {
+	position: absolute;
+	top: 55px;
+	width: 95%;
+	height: 30px;
+
+}
+
+#banner1a {
+	position: absolute;
+	top: 50px;
+	width: 95%;
+	height: 30px;
+
+}
+
+#banner2 {
+	position: absolute;
+	top: 450px;
+	width: 95%;
+	height: 30px;
+
+}
+
+#banner22 {
+	position: absolute;
+	top: 450px;
+	width: 95%;
+	height: 30px;
+
+}
+
+#banner3 {
+	position: absolute;
+	top: 215px;
+	width: 95%;
+	height: 30px;
+
+}
+
+#bannerr3 {
+	position: absolute;
+	top: 360px;
+	width: 95%;
+	height: 30px;
+
+}
+
+#subbanner1 {
+	position: absolute;
+	top: 250px;
+	width: 95%;
+	height: 30px;
+
+
+}
+
+#subbanner2 {
+	position: absolute;
+	top: 376px;
+	width: 95%;
+	height: 30px;
+	left: 2%;
+
+}
+
+#banner4 {
+	position: absolute;
+	top: 261px;
+	width: 95%;
+	height: 30px;
+
+
+}
+
+#banner5 {
+	position: absolute;
+	top: 475px;
+	width: 95%;
+	height: 30px;
+
+}
+
+#banner6 {
+	position: absolute;
+	top: 580px;
+	width: 95%;
+	height: 30px;
+
+}
+
+#b1 {
+	background-image: url('./image/button/effect/Standard/Explosion.png');
+
+	left: 5%;
+	top: 120px;
+}
+
+#b1:hover {
+	background-image: url('./image/button/effect/Rollover/Explosion-Kopie.png');
+}
+
+#b1:active {
+	background-image: url('./image/button/effect/Clicked/Explosion-Kopie.png');
+}
+
+#b2 {
+	background-image: url('./image/button/effect/Standard/Bubbles.png');
+
+	left: 50%;
+	top: 120px;
+}
+
+#b2:hover {
+	background-image: url('./image/button/effect/Rollover/Bubbles-Kopie.png');
+}
+
+#b2:active {
+	background-image: url('./image/button/effect/Clicked/Bubbles%20Kopie.png');
+}
+
+#b3 {
+	background-image: url('./image/button/effect/Standard/Galaxy.png');
+
+	left: 5%;
+	top: 205px;
+}
+
+#b3:hover {
+	background-image: url('./image/button/effect/Rollover/Galaxy-Kopie.png');
+}
+
+#b3:active {
+	background-image: url('./image/button/effect/Clicked/Galaxy%20Kopie.png');
+}
+
+#b3a {
+	background-image: url('./image/button/effect/Standard/Dust.png');
+
+
+	left: 5%;
+	top: 290px;
+
+}
+
+#b3a:hover {
+	background-image: url('./image/button/effect/Rollover/Dust_rollover.png');
+}
+
+#b3a:active {
+	background-image: url('./image/button/effect/Clicked/Dust_clicked.png');
+}
+
+#b4 {
+	background-image: url('./image/button/effect/Standard/50-50.png');
+
+	left: 50%;
+	top: 205px;
+}
+
+#b4:hover {
+	background-image: url('./image/button/effect/Rollover/50-50-Kopie.png');
+}
+
+#b4:active {
+	background-image: url('./image/button/effect/Clicked/50-50%20Kopie.png');
+}
+
+#b4a {
+	background-image: url('./image/button/newbtns/newbtns/Flower\ Clicked.png');
+
+	left: 50%;
+	top: 290px;
+}
+
+#b4a:hover {
+	background-image: url('./image/button/newbtns/newbtns/Flower.png');
+}
+
+#b4a:active {
+	background-image: url('./image/button/newbtns/newbtns/Flower\ Rollover.png');
+}
+
+#b5a {background-image: url('./image/button/newbtns/newbtns/Watercolor_click.png');left: 50%;top: 290px;}
+#b5a:hover {background-image: url('./image/button/newbtns/newbtns/Watercolor_hover.png');}
+#b5a:active {background-image: url('./image/button/newbtns/newbtns/Watercolor.png');}
+
+#b5 {
+	background-image: url('./image/button/effect/Standard/part%20I.png');
+
+	left: 5%;
+	top: 500px;
+}
+
+#b5:hover {
+	background-image: url('./image/button/effect/Rollover/part%20I%20Kopie.png');
+}
+
+#b5:active {
+	background-image: url('./image/button/effect/Clicked/part%20I%20Kopie.png');
+}
+
+
+#exp_II:hover {
+	background-image: url('./image/Update/EX_part2_rollover.png');
+}
+
+#exp_II6:active {
+	background-image: url('./image/Update/EX_part2_clicked.png');
+}
+#exp_II {
+	background-image: url('./image/Update/EX_part2.png');
+
+	left: 50%;
+	top: 500px;
+}
+
+#b6 {
+	background-image: url('./image/button/effect/Standard/part%20II.png');
+
+	left: 50%;
+	top: 500px;
+}
+#b6:hover {
+	background-image: url('./image/button/effect/Rollover/part%20II%20Kopie.png');
+}
+
+#b6:active {
+	background-image: url('./image/button/effect/Clicked/part%20II%20Kopie.png');
+}
+
+#bb5 {
+	background-image: url('./image/button/effect/Standard/part%20I.png');
+
+	left: 5%;
+	top: 585px;
+}
+
+#bb5:hover {
+	background-image: url('./image/button/effect/Rollover/part%20I%20Kopie.png');
+}
+
+#bb5:active {
+	background-image: url('./image/button/effect/Clicked/part%20I%20Kopie.png');
+}
+
+#bb6 {
+	background-image: url('./image/button/effect/Standard/part%20II.png');
+
+	left: 50%;
+	top: 585px;
+}
+
+#bb6:hover {
+	background-image: url('./image/button/effect/Rollover/part%20II%20Kopie.png');
+}
+
+#bb6:active {
+	background-image: url('./image/button/effect/Clicked/part%20II%20Kopie.png');
+}
+
+#nature {
+	background-image: url('./image/button/Nature/Nature/Forest\ Clicked.png');
+
+	left: 5%;
+	top: 755px;
+}
+
+#nature:hover {
+	background-image: url('./image/button/Nature/Nature/Forest\ Rollover.png');
+}
+
+#nature:active {
+	background-image: url('./image/button/Nature/Nature/Forest.png');
+}
+
+#rock {
+	background-image: url('./image/button/Nature/Nature/Rock\ Clicked.png');
+
+	left: 5%;
+	top: 839px;
+}
+
+#rock:hover {
+	background-image: url('./image/button/Nature/Nature/Rock\ Rollover.png');
+}
+
+#rock:active {
+	background-image: url('./image/button/Nature/Nature/Rock.png');
+}
+
+#ocean {
+	background-image: url('./image/button/Nature/Nature/Ocean\ Clicked.png');
+
+	left: 50%;
+	top: 755px;
+}
+
+#ocean:hover {
+	background-image: url('./image/button/Nature/Nature/Ocean\ Rollover.png');
+}
+
+#ocean:active {
+	background-image: url('./image/button/Nature/Nature/Ocean.png');
+}
+
+#b7 {
+	background-image: url('./image/button/file/Standard/Original%20TIFF%20Kopie.png');
+
+	left: 5%;
+	top: 120px;
+}
+
+#b7:hover {
+	background-image: url('./image/button/file/Rollover/Original%20TIFF%20Kopie.png');
+}
+
+#b7:active {
+	background-image: url('./image/button/file/Clicked/Original%20TIFF%20Kopie.png');
+}
+
+#b8 {
+	background-image: url('./image/Update/TIFF\ Split.png');
+
+	left: 50%;
+	top: 120px;
+}
+
+#b8:hover {
+	background-image: url('./image/Update/TIFF\ Split_Rollover.png');
+}
+
+#b8:active {
+	background-image: url('./image/Update/TIFF\ Split_Clicked.png');
+}
+
+#b9 {
+	background-image: url('./image/button/file/Standard/Original%20JPEG%20Kopie.png');
+
+	left: 5%;
+	top: 270px;
+
+}
+
+#b9:hover {
+	background-image: url('./image/button/file/Rollover/Original%20JPEG%20Kopie.png');
+}
+
+#b9:active {
+	background-image: url('./image/button/file/Clicked/Original%20JPEG%20Kopie.png');
+}
+#b91 {
+	background-image: url('./image/Update/JPEG\ +\ TIFF.png');
+
+	left: 5%;
+	top: 270px;
+
+}
+
+#b91:hover {
+	background-image: url('./image/Update/JPEG\ +\ TIFF_Rollover.png');
+}
+
+#b91:active {
+	background-image: url('./image/Update/JPEG\ +\ TIFF_Clicked.png');
+}
+#bround {
+	background-image: url('./image/button/newbtns/newbtns/Round.png');
+	background-size: cover;
+	background-position: center;
+	top: 488px;
+	height: 35px;
+	width: 50px;
+	border: 0px solid;
+	border-radius: 15px 15px 15px 15px;
+	background-color: #535353;
+
+}
+
+#bround:hover {
+	background-image: url('./image//button/newbtns/newbtns/Round-Rollover.png');
+}
+
+#bround:active {
+	background-image: url('./image/button/newbtns/newbtns/Round-Clicked.png');
+}
+
+#b10 {
+	background-image: url('./image/Update/JPEG\ Split.png');
+	left: 50%;
+	top: 270px;
+}
+
+#b10:hover {
+	background-image: url('./image/Update/JPEG\ Split_Rollover.png');
+}
+
+#b10:active {
+	background-image: url('./image/Update/JPEG\ Split_Clicked.png');
+}
+#twoplusonone {
+	background-image: url('./image/Update/2\ on\ 1\ -\ 1.png');
+	left: 50%;
+	top: 270px;
+}
+
+#twoplusonone:hover {
+	background-image: url('./image/Update/2\ on\ 1\ -\ 2.png');
+}
+
+#twoplusonone:active {
+	background-image: url('./image/Update/2\ on\ 1\ -\ 3.png');
+}
+#layoutchange {
+	background-image: url('./image/Update/Layout\ -\ 1.png');
+	left: 50%;
+	top: 270px;
+}
+
+#layoutchange:hover {
+	background-image: url('./image/Update/Layout\ -\ 2.png');
+}
+
+#layoutchange:active {
+	background-image: url('./image/Update/Layout\ -\ 3.png');
+}
+#addtext {
+	background-image: url('./image/Update/Add\ Text\ -\ 1.png');
+	left: 50%;
+	top: 270px;
+}
+
+#addtext:hover {
+	background-image: url('./image/Update/Add\ Text\ -\ 2.png');
+}
+
+#addtext:active {
+	background-image: url('./image/Update/Add\ Text\ -\ 3.png');
+}
+#b101 {
+	background-image: url('./image/Update/JPEG\ +\ TIFF\ Split.png');
+	left: 50%;
+	top: 270px;
+}
+
+#b101:hover {
+	background-image: url('./image/Update/JPEG\ +\ TIFF\ Split_Rollover.png');
+}
+
+#b101:active {
+	background-image: url('./image/Update/JPEG\ +\ TIFF\ Split_Clicked.png');
+}
+
+#b11 {
+	background-image: url('./image/button/print/Standard/Small%20Kopie.png');
+	left: 5%;
+	top: 120px;
+}
+
+#b11:hover {
+	background-image: url('./image/button/print/Rollover/Small%20Kopie.png');
+}
+
+#b11:active {
+	background-image: url('./image/button/print/Clicked/Small%20Kopie.png');
+}
+
+#removeEffect {
+	background-image: url('./image/button/newbtns/newbtns/TIFF\ Remove\ Effect.\ clicked.png');
+	left: 27%;
+	top: 120px;
+}
+
+#removeEffect:hover {
+	background-image: url('./image/button/newbtns/newbtns/TIFF\ Remove\ Effect\ Rollover.png');
+}
+
+#removeEffect:active {
+	background-image: url('./image/button/newbtns/newbtns/TIFF\ Remove\ Effect.png');
+}
+
+#restore_new {
+	background-image: url('./image/Update/Remove\ Effect\ -\ 1.png');
+	left: 27%;
+	top: 120px;
+}
+
+#restore_new:hover {
+	background-image: url('./image/Update/Remove\ Effect\ -\ 2.png');
+}
+
+#restore_new:active {
+	background-image: url('./image/Update/Remove\ Effect\ -\ 3.png');
+}
+
+#Reset_layout {
+	background-image: url('./image/Update/Reset\ -\ 1.png');
+	left: 27%;
+	top: 120px;
+}
+
+#Reset_layout:hover {
+	background-image: url('./image/Update/Reset\ -\ 2.png');
+}
+
+#Reset_layout:active {
+	background-image: url('./image/Update/Reset\ -\ 3.png');
+}
+
+#Repair_Image {
+	background-image: url('./image/Update/adeel/Repair_standard.png');
+	left: 27%;
+	top: 120px;
+}
+
+#Repair_Image:hover {
+	background-image: url('./image/Update/adeel/Repair_hover.png');
+}
+
+#Repair_Image:active {
+	background-image: url('./image/Update/adeel/Repair_clicked.png');
+}
+
+#Web_File {background-image: url('./image/Update/adeel/Web_standard.png');left: 27%;top: 120px;}
+#Web_File:hover {background-image: url('./image/Update/adeel/Web_hover.png');}
+#Web_File:active {background-image: url('./image/Update/adeel/Web_clicked.png');}
+
+#Print_File {background-image: url('./image/Update/adeel/Print_standard.png');left: 27%;top: 120px;}
+#Print_File:hover {background-image: url('./image/Update/adeel/Print_hover.png');}
+#Print_File:active {background-image: url('./image/Update/adeel/Print_clicked.png');}
+
+#Pro_File {background-image: url('./image/Update/adeel/Pro_standard.png');left: 27%;top: 120px;}
+#Pro_File:hover {background-image: url('./image/Update/adeel/Pro_hover.png');}
+#Pro_File:active {background-image: url('./image/Update/adeel/Pro_clicked.png');}
+
+
+
+#split_image {
+	background-image: url('./image/Update/Split\ -\ 1.png');
+	left: 27%;
+	top: 120px;
+}
+
+#split_image:hover {
+	background-image: url('./image/Update/Split\ -\ 2.png');
+}
+
+#split_image:active {
+	background-image: url('./image/Update/Split\ -\ 3.png');
+}
+
+#removeEffectjpg {
+	background-image: url('./image/button/newbtns/newbtns/JPEG\ Remove\ Effect.\ clicked.png');
+	left: 27%;
+	top: 270px;
+}
+
+#removeEffectjpg:hover {
+	background-image: url('./image/button/newbtns/newbtns/JPEG\ Remove\ Effect\ Rollover.png');
+}
+
+#removeEffectjpg:active {
+	background-image: url('./image/button/newbtns/newbtns/JPEG\ Remove\ Effect.png');
+}
+
+#b12 {
+	background-image: url('./image/button/print/Standard/Large%20Kopie.png');
+	left: 50%;
+	top: 120px;
+}
+
+#b12:hover {
+	background-image: url('./image/button/print/Rollover/Large%20Kopie.png');
+}
+
+#b12:active {
+	background-image: url('./image/button/print/Clicked/Large%20Kopie.png');
+}
+
+
+#b3b1 {
+	background-image: url(./image/button/print/Standard/3-2.png);
+	background-size: cover;
+	background-position: center;
+	;
+	left: 5%;
+	top: 284px;
+	height: 35px;
+	width: 128px;
+	border: 0px solid;
+	border-radius: 15px 15px 15px 15px;
+	background-color: #535353;
+}
+
+#b3b1:hover {
+	background-image: url('./image/button/print/Rollover/3-2.png');
+}
+
+#b3b1:active {
+	background-image: url('./image/button/print/Clicked/3-2.png');
+}
+
+#b3b2 {
+	background-image: url(./image/button/print/Standard/1-1.png);
+	background-size: cover;
+	background-position: center;
+	;
+	left: 5%;
+	top: 328px;
+	height: 35px;
+	width: 128px;
+	border: 0px solid;
+	border-radius: 15px 15px 15px 15px;
+	background-color: #535353;
+}
+
+#b3b2:hover {
+	background-image: url('./image/button/print/Rollover/1-1.png');
+}
+
+#b3b2:active {
+	background-image: url('./image/button/print/Clicked/1-1.png');
+}
+
+#b3b3 {
+	background-image: url('./image/button/print/Standard/a4-3.png');
+	background-size: cover;
+	background-position: center;
+	;
+	left: 50%;
+	top: 284px;
+	height: 35px;
+	width: 128px;
+	border: 0px solid;
+	border-radius: 15px 15px 15px 15px;
+	background-color: #535353;
+}
+
+#b3b3:hover {
+	background-image: url('./image/button/print/Rollover/4-3.png');
+}
+
+#b3b3:active {
+	background-image: url('./image/button/print/Clicked/4-3.png');
+}
+
+#b3b4 {
+	background-image: url('./image/button/print/Standard/a4-5.png');
+	background-size: cover;
+	background-position: center;
+	;
+	left: 50%;
+	top: 328px;
+	height: 35px;
+	width: 128px;
+	border: 0px solid;
+	border-radius: 15px 15px 15px 15px;
+	background-color: #535353;
+}
+
+#b3b4:hover {
+	background-image: url('./image/button/print/Rollover/4-5_rollover.png');
+}
+
+#b3b4:active {
+	background-image: url('./image/button/print/Clicked/4-5_clicked.png');
+}
+
+
+#b3b11 {
+	background-image: url(./image/Update/23.png);
+	background-size: cover;
+	background-position: center;
+	;
+	left: 5%;
+	top: 450px;
+	height: 35px;
+	width: 50px;
+	border: 0px solid;
+	border-radius: 15px 15px 15px 15px;
+	background-color: #535353;
+}
+
+#b3b11:hover {
+	background-image: url('./image/Update/23_Rollover.png');
+}
+
+#b3b11:active {
+	background-image: url('./image/Update/23_Clicked.png');
+}
+
+#b3b22 {
+	background-image: url(./image/button/print/Standard/1-1.png);
+	background-size: cover;
+	background-position: center;
+	;
+	left: 5%;
+	top: 488px;
+	height: 35px;
+	width: 50px;
+	border: 0px solid;
+	border-radius: 15px 15px 15px 15px;
+	background-color: #535353;
+}
+
+#b3b22:hover {
+	background-image: url('./image/button/print/Rollover/1-1.png');
+}
+
+#b3b22:active {
+	background-image: url('./image/button/print/Clicked/1-1.png');
+}
+
+#b3b33 {
+	background-image: url('./image/Update/34.png');
+	background-size: cover;
+	background-position: center;
+	;
+	left: 50%;
+	top: 450px;
+	height: 35px;
+	width: 50px;
+	border: 0px solid;
+	border-radius: 15px 15px 15px 15px;
+	background-color: #535353;
+}
+
+#b3b33:hover {
+	background-image: url('./image/Update/34_Rollover.png');
+}
+
+#b3b33:active {
+	background-image: url('./image/Update/34_Clicked.png');
+}
+
+#b3b44 {
+	background-image: url('./image/Update/45.png');
+	background-size: cover;
+	background-position: center;
+	;
+	left: 50%;
+	top: 488px;
+	height: 35px;
+	width: 50px;
+	border: 0px solid;
+	border-radius: 15px 15px 15px 15px;
+	background-color: #535353;
+}
+
+#b3b44:hover {
+	background-image: url('./image/Update/45_Rollover.png');
+}
+
+#b3b44:active {
+	background-image: url('./image/Update/45_Clicked.png');
+}
+
+/*  */
+#b13 {
+	background-image: url('./image/button/print/Standard/Preview%20Kopie.png');
+	left: 5%;
+	top: 419px;
+}
+
+#b13:hover {
+	background-image: url('./image/button/print/Rollover/Preview%20Kopie.png');
+}
+
+#b13:active {
+	background-image: url('./image/button/print/Clicked/Preview%20Kopie.png');
+}
+
+#b113 {
+	background-image: url('./image/button/print/Standard/Preview%20Kopie.png');
+	left: 5%;
+	top: 87%;
+}
+
+#b113:hover {
+	background-image: url('./image/button/print/Rollover/Preview%20Kopie.png');
+}
+
+#b113:active {
+	background-image: url('./image/button/print/Clicked/Preview%20Kopie.png');
+}
+
+#watermarked {
+	background-image: url('./image/button/newbtns/newbtns/Watermark\ clicked.png');
+	left: 27%;
+	top: 87%;
+}
+
+#watermarked:hover {
+	background-image: url('./image/button/newbtns/newbtns/Watermark\ Rollover.png');
+}
+
+#watermarked:active {
+	background-image: url('./image/button/newbtns/newbtns/Watermark.png');
+}
+
+#b14 {
+	background-image: url('./image/button/print/Standard/HQ%20JPEG%20Kopie.png');
+	left: 50%;
+	top: 419px;
+}
+
+#b14:hover {
+	background-image: url('./image/button/print/Rollover/HQ%20JPEG%20Kopie.png');
+}
+
+#b14:active {
+	background-image: url('./image/button/print/Clicked/HQ%20JPEG%20Kopie.png');
+}
+
+#b114 {
+	background-image: url('./image/button/newbtns/newbtns/Premium\ Print\ Clicked.png');
+	left: 50%;
+	top: 87%;
+}
+
+#b114:hover {
+	background-image: url('./image/button/newbtns/newbtns/Premium\ Print\ Rollover.png');
+}
+
+#b114:active {
+	background-image: url('./image/button/newbtns/newbtns/Premium\ Print.png');
+}
+
+#b15 {
+	background-image: url('./image/Update/23-canvas.png');
+	left: 5%;
+	top: 59%;
+}
+
+#b15:hover {
+	background-image: url('./image/Update/23-canvas_Rollover.png');
+}
+
+#b15:active {
+	background-image: url('./image/Update/23-canvas_Clicked.png');
+}
+
+#b16 {
+	background-image: url('./image/Update/34-canvas.png');
+
+	left: 50%;
+	top: 59%;
+}
+
+#b16:hover {
+	background-image: url('./image/Update/34-canvas_Rollover.png');
+}
+
+#b16:active {
+	background-image: url('./image/Update/34-canvas_Clicked.png');
+}
+
+#b19 {
+	background-image: url('./image/Update/11-canvas.png');
+	left: 5%;
+	top: 68%;
+}
+
+#b19:hover {
+	background-image: url('./image/Update/11-canvas_Rollover.png');
+}
+
+#b19:active {
+	background-image: url('./image/Update/11-canvas_Clicked.png');
+}
+
+#b20 {
+	background-image: url('./image/Update/45-canvas.png');
+	left: 50%;
+	top: 68%;
+}
+
+#b20:hover {
+	background-image: url('./image/Update/45-canvas_Rollover.png');
+}
+
+#b20:active {
+	background-image: url('./image/Update/45-canvas_Clicked.png');
+}
+#imge_numbr {
+	background-image: url('./image/Update/Image\ Label.png');
+	left: 50%;
+	top: 68%;
+}
+
+#imge_numbr:hover {
+	background-image: url('./image/Update/Image\ Label_Rollover.png');
+}
+
+#imge_numbr:active {
+	background-image: url('./image/Update/Image\ Label_Clicked.png');
+}
+#label_sumary {
+	background-image: url('./image/Update/Summary\ Label.png');
+	left: 50%;
+	top: 68%;
+}
+
+#label_sumary:hover {
+	background-image: url('./image/Update/Summary\ Label_Rollover.png');
+}
+
+#label_sumary:active {
+	background-image: url('./image/Update/Summary\ Label_Clicked.png');
+}
+
+#b21 {
+	background-image: url('./image/button/special/Standard/part-I-Kopie.png');
+	left: 5%;
+	top: 145px;
+}
+
+#b21:hover {
+	background-image: url('./image/button/special/Rollover/part-I-Kopie.png');
+}
+
+#b21:active {
+	background-image: url('./image/button/special/Clicked/part-I-Kopie.png');
+}
+
+#b22 {
+	background-image: url('./image/button/special/Standard/part-II-Kopie.png');
+	left: 50%;
+	top: 145px;
+}
+
+#b22:hover {
+	background-image: url('./image/button/special/Rollover/part-II-Kopie.png');
+}
+
+#b22:active {
+	background-image: url('./image/button/special/Clicked/part-II-Kopie.png');
+}
+
+#b22a {
+	background-image: url('./image/button/effect/Standard/Dust.png');
+	left: 5%;
+	top: 390px;
+}
+
+#b22a:hover {
+	background-image: url('./image/button/effect/Rollover/Dust_rollover.png');
+}
+
+#b22a:active {
+	background-image: url('./image/button/effect/Clicked/Dust_clicked.png');
+}
+
+#b22aa {
+	background-image: url('./image/button/print/Standard/Preview\ Kopie.png');
+	left: 5%;
+	top: 690px;
+}
+
+#b22aa:hover {
+	background-image: url('./image/button/print/Rollover/Preview-Kopie.png');
+}
+
+#b22aa:active {
+	background-image: url('./image/button/print/Clicked/Preview-Kopie.png');
+}
+
+#b23 {
+	background-image: url('./image/button/newbtns/newbtns/Flower\ Clicked.png');
+	left: 50%;
+	top: 390px;
+
+}
+
+#b23:hover {
+	background-image: url('./image/button/newbtns/newbtns/Flower\ Rollover.png');
+}
+
+#b23:active {
+	background-image: url('./image/button/newbtns/newbtns/Flower.png');
+}
+
+#pencil {
+	background-image: url('./image/button/special/Standard/Text-Kopie.png');
+	left: 5%;
+	top: 223px;
+
+}
+
+#pencil:hover {
+	background-image: url('./image/button/special/Rollover/Text-Kopie.png');
+}
+
+#pencil:active {
+	background-image: url('./image/button/special/Clicked/Text-Kopie.png');
+}
+
+#b223 {
+	background-image: url('./image/button/newbtns/newbtns/Watermark\ clicked.png');
+	left: 50%;
+	top: 690px;
+
+}
+
+#b223:hover {
+	background-image: url('./image/button/newbtns/newbtns/Watermark\ Rollover.png');
+}
+
+#b223:active {
+	background-image: url('./image/button/newbtns/newbtns/Watermark.png');
+}
+
+#xxl_print {
+	background-image: url('./image/button/newbtns/newbtns/XXL-Print\ Clicked.png');
+	left: 50%;
+	top: 780px;
+
+}
+
+#xxl_print:hover {
+	background-image: url('./image/button/newbtns/newbtns/XXL-Print\ Rollover.png');
+}
+
+#xxl_print:active {
+	background-image: url('./image/button/newbtns/newbtns/XXL-Print.png');
+}
+#jewelry {
+	background-image: url('./image/button/newbtns/newbtns/Main-Button-Jewl.png');
+	left: 50%;
+	top: 780px;
+
+}
+
+#jewelry:hover {
+	background-image: url('./image/button/newbtns/newbtns/Main-Button-Jewl-2.png');
+}
+
+#jewelry:active {
+	background-image: url('./image/button/newbtns/newbtns/Main-Button-Jewl-3.png');
+}
+
+#b2233 {
+	background-image: url('./image/button/newbtns/newbtns/Premium\ Print\ Clicked.png');
+	left: 5%;
+	top: 780px;
+
+}
+
+#b2233:hover {
+	background-image: url('./image/button/newbtns/newbtns/Premium\ Print\ Rollover.png');
+}
+
+#b2233:active {
+	background-image: url('./image/button/newbtns/newbtns/Premium\ Print.png');
+}
+
+#b24 {
+	background-image: url('./image/button/special/Standard/60_small-Kopie.png');
+	background-size: cover;
+	background-position: center;
+	;
+
+	left: 5%;
+	top: 510px;
+	height: 35px;
+	width: 128px;
+	border: 0px solid;
+	border-radius: 15px 15px 15px 15px;
+	background-color: #535353;
+}
+
+#b24:hover {
+	background-image: url('./image/button/special/Rollover/60_small-Kopie.png');
+}
+
+#b24:active {
+	background-image: url('./image/button/special/Clicked/60_small-Kopie.png');
+}
+
+#b25 {
+	background-image: url('./image/button/special/Standard/80_small-Kopie.png');
+	background-size: cover;
+	background-position: center;
+	;
+
+	left: 50%;
+	top: 510px;
+	height: 35px;
+	width: 128px;
+	border: 0px solid;
+	border-radius: 15px 15px 15px 15px;
+	background-color: #535353;
+}
+
+#b25:hover {
+	background-image: url('./image/button/special/Rollover/80_small-Kopie.png');
+}
+
+#b25:active {
+	background-image: url('./image/button/special/Clicked/80_small-Kopie.png');
+}
+
+#b26 {
+	background-image: url('./image/button/special/Standard/100_small-Kopie.png');
+	background-size: cover;
+	background-position: center;
+	;
+
+	left: 5%;
+	top: 555px;
+	height: 35px;
+	width: 128px;
+	border: 0px solid;
+	border-radius: 15px 15px 15px 15px;
+	background-color: #535353;
+}
+
+#b26:hover {
+	background-image: url('./image/button/special/Rollover/100_small-Kopie.png');
+}
+
+#b26:active {
+	background-image: url('./image/button/special/Clicked/100_small-Kopie.png');
+}
+
+#b27 {
+	background-image: url('./image/button/special/Standard/120_small-Kopie.png');
+	background-size: cover;
+	background-position: center;
+	;
+
+	left: 50%;
+	top: 555px;
+	height: 35px;
+	width: 128px;
+	border: 0px solid;
+	border-radius: 15px 15px 15px 15px;
+	background-color: #535353;
+}
+
+#b27:hover {
+	background-image: url('./image/button/special/Rollover/120_small-Kopie.png');
+}
+
+#b27:active {
+	background-image: url('./image/button/special/Clicked/120_small-Kopie.png');
+}
+
+#b28 {
+	background-image: url('./image/button/special/Standard/140_small-Kopie.png');
+	background-size: cover;
+	background-position: center;
+	;
+
+	left: 5%;
+	top: 600px;
+	height: 35px;
+	width: 128px;
+	border: 0px solid;
+	border-radius: 15px 15px 15px 15px;
+	background-color: #535353;
+}
+
+#b28:hover {
+	background-image: url('./image/button/special/Rollover/140_small-Kopie.png');
+}
+
+#b28:active {
+	background-image: url('./image/button/special/Clicked/140_small-Kopie.png');
+}
+
+#b29 {
+	background-image: url('./image/button/special/Standard/160_small-Kopie.png');
+	background-size: cover;
+	background-position: center;
+	;
+
+	left: 50%;
+	top: 600px;
+	height: 35px;
+	width: 128px;
+	border: 0px solid;
+	border-radius: 15px 15px 15px 15px;
+	background-color: #535353;
+}
+
+#b29:hover {
+	background-image: url('./image/button/special/Rollover/160_small-Kopie.png');
+}
+
+#b29:active {
+	background-image: url('./image/button/special/Clicked/160_small-Kopie.png');
+}
+
+#b30 {
+	background-image: url('./image/button/special/Standard/Original_small-Kopie.png');
+	background-size: cover;
+	background-position: center;
+	;
+
+	left: 5%;
+	top: 573px;
+	height: 35px;
+	width: 128px;
+	border: 0px solid;
+	border-radius: 15px 15px 15px 15px;
+	background-color: #535353;
+}
+
+#b30:hover {
+	background-image: url('./image/button/special/Rollover/Original_small-Kopie.png');
+}
+
+#b30:active {
+	background-image: url('./image/button/special/Clicked/Original_small-Kopie.png');
+}
+
+#b31 {
+	background-image: url('./image/button/special/Standard/Preview-Kopie.png');
+	left: 5%;
+	top: 625px;
+}
+
+#b31:hover {
+	background-image: url('./image/button/special/Rollover/Preview-Kopie.png');
+}
+
+#b31:active {
+	background-image: url('./image/button/special/Clicked/Preview-Kopie.png');
+}
+
+#b32 {
+	background-image: url('./image/button/special/Standard/HQ%20JPEG-Kopie.png');
+	left: 50%;
+	top: 625px;
+}
+
+#b32:hover {
+	background-image: url('./image/button/special/Rollover/HQ%20JPEG-Kopie.png');
+}
+
+#b32:active {
+	background-image: url('./image/button/special/Clicked/HQ-JPEG-Kopie.png');
+}
+
+.bigb {
+	background-size: cover;
+	height: 66px;
+	align-items: center;
+	width: 80px;
+	border: 0px solid;
+	border-radius: 15px 15px 15px 15px;
+	background-color: #535353;
+	background-position: center;
+	margin: 2px;
+}
+.bigb1 {
+	background-size: cover;
+	height: 60px;
+	align-items: center;
+	width: 50px;
+	border: 0px solid;
+	border-radius: 15px 15px 15px 15px;
+	background-color: #535353;
+	background-position: center;
+}
+.effect_banner h5{
+	background-color: #aad08f;
+}
+.export_banner h5{
+	background-color: #88cac0;
+}
+.specials_banner h5{
+	background-color: #18a7b4;
+}
+.banner_text h5 {
+	color: white;
+	text-align: center;
+	padding: 5px;
+	font-size: 14px;
+}
+
+.inner_content {
+	text-align: center;
+}
+.effect_sub p{
+	background-color: #aad084;
+}
+.export_sub p{
+	background-color: #414141;
+}
+.specials_sub p{
+	background-color: #52cad5;
+}
+p{
+	color: white;
+	font-size: 12px;
+}
+.button_container{
+	display: flex;
+    justify-content: space-evenly;
+}

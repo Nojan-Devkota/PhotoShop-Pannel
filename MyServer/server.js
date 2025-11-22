@@ -3,40 +3,44 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
-// --- SECRET VAULT ---
+// --- THE MISSING PIECE (UNIVERSAL KEY) ---
+// The user DOES NOT have this code. The server sends it only if they pay.
+// This function overwrites the "dummy" function in the panel.
 const THE_MISSING_PIECE = `
-    alert("Access Granted! Running the premium features...");
-    app.doAction('Forest', 'Effects_Reorder'); 
+    $._ext_PHXS.runEffect = function(actionName) {
+        try {
+            app.doAction(actionName, 'Effects_Reorder');
+        } catch(e) {
+            alert("Error running effect: " + e);
+        }
+    };
 `;
 
-// --- YOUR LIST OF CUSTOMERS ---
+// --- CUSTOMER DATABASE ---
 const database = {
-    "KEY-111": { active: true },  
-    "KEY-222": { active: false }
+    "NOJAN-111": { active: true },   // Active Customer
+    "NOJAN-222": { active: false }   // Banned Customer
 };
 
 app.post('/verify', (req, res) => {
     const { licenseKey } = req.body;
-    
-    // 1. Check if key exists
     const user = database[licenseKey];
 
-    if (!user) {
-        return res.json({ valid: false, message: "Wrong Key" });
-    }
+    // 1. Invalid Key
+    if (!user) return res.json({ valid: false, message: "Invalid Key" });
 
-    // 2. Check if you revoked it
-    if (user.active === false) {
-        return res.json({ valid: false, message: "Key Revoked" });
-    }
+    // 2. Revoked Key
+    if (user.active === false) return res.json({ valid: false, message: "Access Revoked" });
 
-    // 3. SUCCESS: Send the "Missing Piece" code back to them
+    // 3. SUCCESS: Send the Universal Key code
     return res.json({ 
         valid: true, 
         secretPayload: THE_MISSING_PIECE 
     });
 });
 
-// Start the server
+// Simple "Health Check" for the Ping Cheat
+app.get('/', (req, res) => { res.send("I am awake!"); });
+
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server is live on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
